@@ -7,13 +7,9 @@ public class Quiz {
         String question = "What is the capital of Pakistan?\n";
         String[] options = {"A", "B", "C", "D", "E"};
         question += "A. Islamabad \n B. Abuja \n C. Kuala Lumpur \n D. Moscow \n E. Ulan Bator";
-
-
-
         while (true){
             String answer = JOptionPane.showInputDialog(question);
             answer = answer.toUpperCase();
-
             if(answer.equals("A")){
                 JOptionPane.showMessageDialog(null, "Correct!");
                 break;
@@ -25,12 +21,6 @@ public class Quiz {
 
                 JOptionPane.showMessageDialog(null, "Invalid answer. Please enter A, B, C, D, or E.");
             }
-
-
-
         }
-
-
-
     }
 }
