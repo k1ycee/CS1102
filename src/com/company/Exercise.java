@@ -3,6 +3,7 @@ package com.company;
 public class Exercise {
     public static void main(String [] args) {
         forExample();
+        System.out.println(sum(3, 5));
     }
     public static void forExample(){
         int years;
@@ -28,5 +29,9 @@ public class Exercise {
             System.out.println(principal);
             years++;
         }
+    }
+
+    static int sum(int a, int b){
+        return  a + b;
     }
 }
