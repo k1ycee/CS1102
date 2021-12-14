@@ -2,12 +2,8 @@ package com.company;
 
 import javax.swing.JOptionPane;
 
-public class MultipleChoiceQuestion {
-    static int nQuestions = 0;
-    static int nCorrect = 0;
+public class MultipleChoiceQuestion extends Question{
 
-    String question;
-    String correctAnswer;
     public MultipleChoiceQuestion(String query, String a, String b, String c, String d, String e, String answer){
         question  = query + "\n";
         question += "A ." + a + "\n";
@@ -35,22 +31,6 @@ public class MultipleChoiceQuestion {
     }
 
 
-     void check(){
-        String answer = ask();
 
-        if(answer.equals(correctAnswer)){
-            JOptionPane.showMessageDialog(null, "Correct!");
-            nCorrect++;
-        }
-        else {
-            JOptionPane.showMessageDialog(null, "Incorrect.\n" +
-                    "The correct answer is " + correctAnswer);
-        }
-    }
-
-
-    static void showResults(){
-        JOptionPane.showMessageDialog(null, nCorrect + " correct out of questions " + nQuestions);
-    }
 
 }
