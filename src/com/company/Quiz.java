@@ -1,8 +1,6 @@
 package com.company;
 
 public class Quiz {
-
-
     public static void main(String[] args){
         Question question = new MultipleChoiceQuestion("What is the capital of Pakistan?", "Islamabad", "Abuja", "Kuala Lumpur" ,"Moscow" ," Ulan Bator", "A");
         question.check();
